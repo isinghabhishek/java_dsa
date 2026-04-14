@@ -34,7 +34,7 @@ public class BipartiteGraph {
         for(int i=0; i<col.length; i++) {
             col[i] = -1;
         }
-        Queue<Integer> q = new LinkedList<>();
+        Queue<Integer> q = new LinkedList<Integer>();
 
         for(int i=0; i<graph.length; i++) {
             if(col[i] == -1) { //BFS

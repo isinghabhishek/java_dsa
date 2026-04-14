@@ -16,7 +16,7 @@ abstract class Car {
     }
 }
 
-public class BlueCar extends Car {
+class BlueCar extends Car {
     {
     System.out.println("4");
     }

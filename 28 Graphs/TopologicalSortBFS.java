@@ -38,7 +38,7 @@ public class TopologicalSortBFS {
     public static void topologicalSort(ArrayList<Edge> graph[]) {
         int inDegre[] = new int[graph.length];
         calcInDegre(graph, inDegre);
-        Queue<Integer> q = new LinkedList<>();
+        Queue<Integer> q = new LinkedList<Integer>();
 
         for(int i=0; i<inDegre.length; i++) {
             if(inDegre[i] == 0) {

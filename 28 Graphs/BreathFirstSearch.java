@@ -51,7 +51,7 @@ public class BreathFirstSearch {
     }
 
     public static void bfsUtil(ArrayList<Edge>[] graph, boolean visited[]) { // O(V+E)
-        Queue<Integer> q = new LinkedList<>();
+        Queue<Integer> q = new LinkedList<Integer>();
         q.add(0);  // source = 0
 
         while(!q.isEmpty()) {

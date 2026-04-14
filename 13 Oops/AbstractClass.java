@@ -36,7 +36,7 @@ class Horse extends Animal {
         System.out.println("Horse constructor called");
     }
     void changeColor() {
-        color = "dark Brown";
+        this.color = "dark Brown";
     }
     void walk(){
     System.out.println("walks on 4 legs");
