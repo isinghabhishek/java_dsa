@@ -12,7 +12,7 @@ public class FloodFillAlgo {
         //up
         helper(image, sr-1, sc, color, vis, orgCol);
         //down
-        helper(image, sr+1, sc, color, vis, orgCol)
+        helper(image, sr+1, sc, color, vis, orgCol);
     }
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         boolean vis[][] = new boolean[image.length][image[0].length];
