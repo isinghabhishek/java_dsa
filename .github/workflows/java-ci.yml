@@ -25,8 +25,11 @@ jobs:
       - name: Compile all Java files
         run: |
           echo "Finding and compiling all .java files..."
-          find . -name "*.java" -not -path "./.git/*" > sources.txt
-          echo "Files found:"
-          cat sources.txt
-          javac -encoding UTF-8 @sources.txt
+          mkdir -p out
+          # Build quoted args file for javac (handles spaces in folder names)
+          find . -name "*.java" -not -path "./.git/*" | while IFS= read -r f; do
+            printf '"%s"\n' "$f"
+          done > sources.txt
+          echo "Files found: $(wc -l < sources.txt)"
+          javac -encoding UTF-8 -d out @sources.txt
           echo "Compilation successful!"
