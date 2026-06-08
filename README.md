@@ -813,11 +813,3 @@ If this repository helps your DSA journey, consider starring it on [GitHub](http
 </div>
 
 ---
-
-<div align="center">
-
-**Built with ☕ and persistence.**
-
-If this repository helped your DSA journey, consider giving it a ⭐ on [GitHub](https://github.com/isinghabhishek/java_dsa).
-
-</div>
